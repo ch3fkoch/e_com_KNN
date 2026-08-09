@@ -28,4 +28,17 @@ Stelle sicher, dass die benötigten Bibliotheken installiert sind:
 pip install -r requirements.txt
 ```
 
+## 🔮 Ausblick: Der Schritt zu First-Party Data (User-Accounts)
+
+Aktuell basiert das Modell auf anonymen Session-Daten (Cookies). Für ein echtes Produktionssystem im modernen E-Commerce ist der Wechsel auf eingeloggte Benutzer (User-Accounts) der nächste große Hebel.
+
+**Warum First-Party Data das Machine Learning revolutioniert:**
+1. **Cross-Device Tracking:** Eine zusammenhängende Customer Journey über Handy und Laptop hinweg wird erkennbar, statt als zwei abbrechende Sessions gewertet zu werden.
+2. **Historische Features:** Das KNN kann mit mächtigen neuen Spalten trainiert werden:
+   - `Tage_seit_letztem_Kauf`
+   - `Historischer_Durchschnitts_Warenkorb`
+   - `Retourenquote`
+   - `Wunschzettel_Aktivität`
+3. **DSGVO & Tracking-Resilienz:** Eingeloggte User bieten saubere, datenschutzkonforme Datenpunkte, die unabhängig von Cookie-Blockern (z.B. Apple ITP) funktionieren.
+
 Starte danach einfach Jupyter Notebook oder öffne die Dateien direkt in deiner IDE.
