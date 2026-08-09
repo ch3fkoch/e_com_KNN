@@ -1,0 +1,132 @@
+:root {
+    --dunkelblau: #20344f;
+    --blaugrau: #52627b;
+    --hellgrau: #edeef0;
+    --lemon: #e0ff01;
+    --glass-bg: rgba(82, 98, 123, 0.2);
+    --glass-border: rgba(237, 238, 240, 0.15);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--dunkelblau);
+    color: var(--hellgrau);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--dunkelblau), rgba(32, 52, 79, 0.8));
+    border-bottom: 1px solid var(--glass-border);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+header h1 span {
+    color: var(--lemon);
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(237, 238, 240, 0.8);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--lemon);
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: var(--lemon);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: var(--hellgrau);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card h3 span {
+    font-size: 1.8rem;
+}
+
+.card p {
+    color: rgba(237, 238, 240, 0.85);
+    margin-bottom: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vision-card {
+    background: rgba(224, 255, 1, 0.03);
+    border-color: rgba(224, 255, 1, 0.15);
+}
+
+.vision-card:hover {
+    background: rgba(224, 255, 1, 0.08);
+}
+
+.vision-card h3 {
+    color: var(--lemon);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: rgba(237, 238, 240, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

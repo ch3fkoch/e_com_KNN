@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Com KNN | Data Science Projekt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>E-Com <span>KNN</span></h1>
+        <p>Ein Machine Learning Projekt zur Vorhersage von E-Commerce Kaufwahrscheinlichkeiten mithilfe Künstlicher Neuronaler Netze (MLPClassifier).</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">4 Advanced Business Cases</h2>
+        
+        <div class="grid">
+            <!-- Case 1 -->
+            <div class="card">
+                <h3><span>🎫</span> Smart Vouchers</h3>
+                <p>Anstatt Rabattcodes nach dem Gießkannenprinzip zu verteilen, filtert das Modell gezielt "Wackelkandidaten" (Kaufwahrscheinlichkeit 40%-60%) heraus, um Conversion effizient zu pushen.</p>
+                <img src="images/smart_vouchers.png" alt="Verteilung Kaufwahrscheinlichkeit">
+            </div>
+
+            <!-- Case 2 -->
+            <div class="card">
+                <h3><span>✂️</span> Feature Selection</h3>
+                <p>Eine Reduktion von über 60 Spalten auf die absoluten Top 3 Features (PageValues, ExitRates, Duration) liefert eine nahezu identische Genauigkeit und spart drastisch Serverkosten.</p>
+                <img src="images/feature_selection.png" alt="Feature Selection Accuracy">
+            </div>
+
+            <!-- Case 3 -->
+            <div class="card">
+                <h3><span>🍂</span> Saisonale Modelle</h3>
+                <p>Das Kaufverhalten im Q4 (Black Friday / Weihnachten) weicht extrem vom Rest des Jahres ab. Daher splitten wir den Datensatz, um spezialisierte saisonale Netze zu trainieren.</p>
+                <img src="images/seasonal.png" alt="Saisonale Conversion Rate">
+            </div>
+
+            <!-- Case 4 -->
+            <div class="card">
+                <h3><span>🤖</span> Bot-Detection</h3>
+                <p>Mithilfe eines Isolation Forest Algorithmus identifizieren wir die Top 1% der auffälligsten Besucher. Dies entlarvt Scraper-Bots, die hunderte Seiten in wenigen Sekunden aufrufen.</p>
+                <img src="images/bot_detection.png" alt="Isolation Forest Scatter">
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 5rem;">Ausblick: First-Party Data</h2>
+        
+        <div class="grid">
+            <div class="card vision-card">
+                <h3>1. Customer Lifetime Value (CLV)</h3>
+                <p>Durch User-Accounts wechseln wir von reiner Session-Klassifikation zur Regression. Die KI prognostiziert, wie viel Umsatz ein eingeloggter Kunde in den nächsten 12 Monaten generieren wird.</p>
+            </div>
+            
+            <div class="card vision-card">
+                <h3>2. Churn Prediction</h3>
+                <p>Die KI warnt uns automatisch, bevor ein treuer Stammkunde abwandert. Registriert das Netz z.B. eine starke Abweichung vom üblichen Kaufzyklus, triggert es eine automatische Rückhol-E-Mail.</p>
+            </div>
+
+            <div class="card vision-card">
+                <h3>3. Recommender Systems</h3>
+                <p>Basierend auf Collaborative Filtering empfiehlt die KI Produkte anhand mathematischer Käufer-Ähnlichkeiten (Amazon-Prinzip: "Kunden, die X kauften, kauften auch Y").</p>
+            </div>
+
+            <div class="card vision-card">
+                <h3>4. RFM-Segmentierung</h3>
+                <p>Mittels Unsupervised Learning (z.B. K-Means) werden Kunden vollautomatisch in wertvolle Segmente wie "VIPs" oder "Schnäppchenjäger" geclustert.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Project HEIMDALL AI by Stephan Koch</p>
+    </footer>
+
+</body>
+</html>
