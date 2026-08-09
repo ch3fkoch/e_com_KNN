@@ -15,6 +15,10 @@ Das Projekt besteht aus drei aufeinander aufbauenden Jupyter Notebooks, die idea
 3. **`ecommerce_advanced_knn.ipynb`**
    - Fortgeschritten: Kategoriale Daten verarbeiten mit One-Hot-Encoding (`pd.get_dummies`).
    - Hyperparameter-Tuning: Automatische Modell-Optimierung via `GridSearchCV`.
+4. **`ecommerce_visualization_knn.ipynb`**
+   - Visualisierung: Lernkurve, Heatmap, ROC-Kurve und Feature Importance.
+5. **`ecommerce_business_usecases.ipynb`**
+   - Business Cases: Smart Vouchers (`predict_proba`), Feature Selection, Saisonale Splitts & Bot-Detection (`IsolationForest`).
 
 ## 🚀 Setup & Ausführung
 
