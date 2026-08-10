@@ -2,7 +2,7 @@
 
 Dieses Projekt demonstriert die Nutzung von Maschinellem Lernen (Künstliche Neuronale Netze / Multi-Layer Perceptron), um im E-Commerce die Kaufwahrscheinlichkeit von Webseiten-Besuchern vorherzusagen.
 
-## 📖 Inhalt
+## Inhalt
 
 Das Projekt besteht aus drei aufeinander aufbauenden Jupyter Notebooks, die ideal zur Vorbereitung auf die **Scikit-Learn Zertifizierung** geeignet sind:
 
@@ -20,7 +20,7 @@ Das Projekt besteht aus drei aufeinander aufbauenden Jupyter Notebooks, die idea
 5. **`ecommerce_business_usecases.ipynb`**
    - Business Cases: Smart Vouchers (`predict_proba`), Feature Selection, Saisonale Splitts & Bot-Detection (`IsolationForest`).
 
-## 🚀 Setup & Ausführung
+## Setup & Ausführung
 
 Stelle sicher, dass die benötigten Bibliotheken installiert sind:
 
@@ -28,7 +28,7 @@ Stelle sicher, dass die benötigten Bibliotheken installiert sind:
 pip install -r requirements.txt
 ```
 
-## 🔮 Ausblick: Der Schritt zu First-Party Data (User-Accounts)
+## Ausblick: Der Schritt zu First-Party Data (User-Accounts)
 
 Aktuell basiert das Modell auf anonymen Session-Daten (Cookies). Für ein echtes Produktionssystem im modernen E-Commerce ist der Wechsel auf eingeloggte Benutzer (User-Accounts) der nächste große Hebel.
 
@@ -41,4 +41,4 @@ Aktuell basiert das Modell auf anonymen Session-Daten (Cookies). Für ein echtes
    - `Wunschzettel_Aktivität`
 3. **DSGVO & Tracking-Resilienz:** Eingeloggte User bieten saubere, datenschutzkonforme Datenpunkte, die unabhängig von Cookie-Blockern (z.B. Apple ITP) funktionieren.
 
-Starte danach einfach Jupyter Notebook oder öffne die Dateien direkt in deiner IDE.
+
